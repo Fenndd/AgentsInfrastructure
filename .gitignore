@@ -1,0 +1,17 @@
+# Local environment values; examples must contain no real secrets.
+.env
+.env.*
+!.env.example
+
+# Personal Claude Code overrides and temporary isolated worktrees.
+.claude/settings.local.json
+CLAUDE.local.md
+.claude/worktrees/
+
+# Personal editor settings and operating-system metadata.
+.idea/
+.vscode/
+.obsidian/
+.DS_Store
+Thumbs.db
+Desktop.ini
