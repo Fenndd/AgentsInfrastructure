@@ -35,13 +35,13 @@ Add project-specific source pointers as they become available. Do not invent req
 - Do not create source code, dependencies, or infrastructure as part of repository preparation alone. Implementation requires requirements and a separate development task. An explicit request to install or update agent infrastructure authorizes that infrastructure work.
 - A brief plan is enough for a small change; break complex work into verifiable results.
 - Choose checks based on the risk and substance of the changes. Use real project commands; if they do not exist yet, say so instead of inventing commands or successful results.
-- Completion is confirmed by meeting the task criteria and performing the checks. Distinguish between "verified," "not verified," and "check failed."
+- Implementation completion is confirmed by meeting the task criteria and performing the checks. Distinguish between "verified," "not verified," and "check failed." For tracked tasks, completion enters `review`; `done` also requires acceptance under the project's explicit authority rules.
 - Update related documents if facts change. In projects using `STATUS.md`, update it when the phase, a significant result, an obstacle, or the next step changes.
 - In the final report, state the result, changed files and reasons, checks performed, and limitations. Support significant decisions with verifiable grounds.
 
 ## Subagents
 
-For substantial work, identify bounded independent parts at the start and delegate those that benefit from separate context, verification, or parallel execution. Do not bundle unrelated parts into one strong-model assignment or create agents to meet a quota. Read the orchestration policy before starting; in Codex and Claude Code, use the project-local `model-routing` skill. Use the policy's working-default model for most subagents and reserve stronger models for a stated, focused reasoning difficulty. Every subagent, in any client, reads the policy before starting; every brief states its tier and this requirement and asks for compact findings or direct file changes with verifiable checks. Do not create fixed role profiles in advance. The current tool and session limitations take precedence.
+For substantial work, use the project-local `model-routing` skill in Codex and Claude Code and follow `docs/engineering/AI_ORCHESTRATION.md`. Identify coherent results to delegate before deciding which can run in parallel; dependent stages can be delegated sequentially. Keep the orchestrator responsible for coordination, evidence, and integration while working-default executors perform most substantive engineering work. Reserve stronger models for a justified narrow reasoning gap, then return routine work to the working default. Every brief states its tier, boundaries, criteria/checks, and the requirement to read the common policy sections. Return compact evidence or direct assigned-file changes. Do not set agent quotas, artificial limits, or permanent role profiles. Active tool and session limits take precedence.
 
 ## Project Skills
 

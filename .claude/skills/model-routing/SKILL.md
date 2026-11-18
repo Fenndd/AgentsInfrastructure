@@ -1,10 +1,10 @@
 ---
 name: model-routing
-description: Identify useful independent subagent tasks, then choose the working-default model or a justified exception with bounded context handoffs. Keep small sequential tasks in the main session.
+description: Delegate coherent engineering results, schedule parallel or sequential work, and select the working-default model or a justified narrow exception with bounded handoffs.
 ---
 
 # Project Model Routing (Claude Code entrypoint)
 
-The canonical skill is shared with Codex. Read [.agents/skills/model-routing/SKILL.md](../../../.agents/skills/model-routing/SKILL.md) and the shared [orchestration policy](../../../docs/engineering/AI_ORCHESTRATION.md), then follow them.
+Read the canonical [.agents/skills/model-routing/SKILL.md](../../../.agents/skills/model-routing/SKILL.md), then follow its shared policy and the Claude Code model table. The canonical skill owns the workflow; this adapter adds no separate tier rules.
 
-Claude Code adaptation: determine the tier with the policy's "Choosing a Tier" rule, then use the "Choosing a Model in Claude Code" table. The `sonnet-high` preset serves both tiers 1 and 2; choose `opus-medium` or `opus-high` within tier 3 by the table's explicit condition, and `opus-max` only after the tier-4 gate. Launch the matching roleless preset from `.claude/agents/` as the agent type, without passing `model` or `effort`: per-call values would replace the preset's. State the tier and the instruction to read the policy in every brief. Session tool rules take precedence.
+Launch the selected roleless preset from `.claude/agents/` by agent type without per-call model/effort overrides. Check effective settings as described in the policy when the client exposes them. Active session rules take precedence.
