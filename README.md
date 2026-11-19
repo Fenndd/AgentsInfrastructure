@@ -1,5 +1,13 @@
 # AI Development Infrastructure
 
+A reusable process template for AI-assisted software development with Claude Code, Codex and Gemini CLI.
+
+- **Problem:** AI coding agents work well only with clear rules, task boundaries and verification. Writing these rules again for every repository leads to drift between projects.
+- **What it provides:** one canonical set of repository rules, a task format with acceptance criteria, a development and review workflow, model and effort routing for subagents, four portable skills, and a behavioral evaluation procedure.
+- **How it is used:** the agent transfers the payload into a product repository on request and records a provenance receipt there. A standard-library Python checker verifies links, adapter drift and preset consistency (see [Maintenance and Verification](#maintenance-and-verification)).
+
+Own content is MIT-licensed ([LICENSE](LICENSE)); bundled third-party skills keep their licenses ([NOTICE.md](NOTICE.md)).
+
 This folder is the source template for the user's AI-assisted development infrastructure. Maintain reusable instructions and processes here, then transfer them to an existing or new project when the user requests it. No concrete product is developed here.
 
 The infrastructure contains shared repository rules, task and verification workflows, task-based model routing, Claude Code model/effort presets, reusable skills, and a behavioral evaluation procedure. An optional Codex configuration fragment supplies executor defaults in compatible clients. It does not install clients, configure accounts, or enable tools and permissions. Active user and session instructions take precedence.

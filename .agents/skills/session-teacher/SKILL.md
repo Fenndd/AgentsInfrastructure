@@ -23,4 +23,4 @@ Help the user understand the session incrementally. Explain both high-level moti
 
 The source's `/goal` line describes the teaching completion criterion; it is not an executable command and does not itself authorize creating a persistent Codex goal. Installation alone does not start a teaching session or create its checklist.
 
-The original gist is preserved without rewriting in [references/original-gist.md](references/original-gist.md). Consult it when checking the author's original wording. Source: [ThariqS's gist](https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b).
+Consult the original gist when checking the author's original wording: [ThariqS's gist](https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b). It is linked rather than copied because it states no license.
